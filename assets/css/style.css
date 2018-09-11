@@ -1,5 +1,91 @@
 body {
   font-family: "Yatra One", cursive;
-  background-image: url(assets\images\gotham.jpg);
   background-color:gray;
+  font-size: 24px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  padding:35px 0;
+  text-align: center;
+}
+
+.information {
+  font-size: 2rem;
+  padding:20px 14px;
+  line-height: 35px;
+}
+
+.container p:nth-of-type(2) {
+  margin: 60px 0px;
+}
+
+hr {
+  width: 80%;
+  margin: 25px auto;
+}
+
+.word-to-guess {
+  margin-top: 40px;
+
+}
+
+#placeholders {
+  font-size: 36px;
+}
+
+#pressedLetters {
+  text-transform: uppercase;
+}
+
+#letterBank {
+  margin-top: 25px
+}
+
+.card-title {
+  background-color: darkslategrey;
+}
+
+.hangman {
+  height: 500px;
+  width: 100%;
+  position:relative;
+  max-width: 400px;
+  margin: 35px auto;
+}
+
+.zero, .one, .two, .three, .four, .five, .six, {
+  position: absolute;
+}
+
+.zero {
+  bottom: 0;
+  left: -10px;
+}
+.one {
+  left: 26px;
+  bottom: 50px;
+}
+.two {
+  top: -16px;
+  left: 126px;
+}
+.three {
+  top: 18px;
+  right: 60px;
+}
+.four {
+  top: 68px;
+  right: 27px;
+}
+
+.five {
+  right: 50px;
+  top: 166px;
+}
+.six {
+  right: 77px;
+  top: 169px;
 }
