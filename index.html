@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8" />
+  
+  <title>Word Guess Game</title>
+
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<body>
+  <div class="container">
+    <h1>Word Guess Game (with potential casualty)</h1>
+    <p class="information"> You have 10 chances to guess the right word. The theme is BATMAN.</p>
+    <hr>
+    <div class="grid-container">
+      <div class="main">
+        <p>Press any letter to being!</p>
+        <div>GUESSES REMAINING
+          <span id="guessesRemaining"></span>
+        </div>
+        <div class="word-to-guess">WORD TO GUESS</div>
+        <div id="placeholders"></div>
+        <hr>
+        <div>WINS-LOSSES</div>
+        <div id="wins"></div>
+        <div id="losses"></div>
+
+        <div id="letterbank">
+            <div>Letter Bank</div>
+            <h3 id="pressedLetters"></h3>
+        </div>
+      </div>
+      <div class="hangman">
+        <img src=".assets/images/hangman-0.png" class="zero" alt="">
+        <img src=".assets/images/hangman-1.png" class="zero" alt="">
+        <img src=".assets/images/hangman-2.png" class="zero" alt="">
+        <img src=".assets/images/hangman-3.png" class="zero" alt="">
+        <img src=".assets/images/hangman-4.png" class="zero" alt="">
+        <img src=".assets/images/hangman-5.png" class="zero" alt="">
+        <img src=".assets/images/hangman-6.png" class="zero" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+  
+
+</body>
+</html>
