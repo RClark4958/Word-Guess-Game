@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
     "batcave", 
     "scarecrow", 
     "gordon", 
-    "marsha", 
-    "batgirl"
+    "martha", 
+    "batgirl",
+    "alfred",
+    "deadshot"
   ];
   var pickedWord;
   var pickedWordArray = [];
@@ -18,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var guessesLeft;
 
   function newGame(){
-    guessesleft = 7;
+    guessesLeft = 7;
     lettersGuessed = [];
     pickedWord = batmanShit[Math.floor(Math.random() * batmanShit.length)];
     pickedWordArray = pickedWord.split("");
@@ -46,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.onkeyup = function(event) {
     if (guessesLeft >= 1) {
       var userGuess = event.key;
-      for (var i = 0; i <= lettersGuessed.length -1; i++) {
+      for (var i = 0; i <= lettersGuessed.length - 1; i++) {
         if (lettersGuessed[i].indexOf(userGuess) != -1) {
           return false;
         }
@@ -70,30 +72,30 @@ document.addEventListener("DOMContentLoaded", function() {
       if (pickedWordPlaceholders.join("") === pickedWord) {
         wins++;
         setTimeout(() => {
-          alert("You win! Selena Kyle is anxious to meet you :)");
+          alert("You win! You are truly the Great Detective.");
         }, 300);
       }
       if (guessesLeft === 6) {
-        document.querySelector(".hangman").style.display = "block";
-        document.querySelector(".zero").style.display = "block";
+        document.querySelector(".hangman").style.display = "inline";
+        document.querySelector(".zero").style.display = "inline";
       }
       if (guessesLeft === 5) {
-        document.querySelector(".one").style.display = "block";
+        document.querySelector(".one").style.display = "inline";
       }
       if (guessesLeft === 4) {
-        document.querySelector(".two").style.display = "block";
+        document.querySelector(".two").style.display = "inline";
       }
       if (guessesLeft === 3) {
-        document.querySelector(".three").style.display = "block";
+        document.querySelector(".three").style.display = "inline";
       }
       if (guessesLeft === 2) {
-        document.querySelector(".four").style.display = "block";
+        document.querySelector(".four").style.display = "inline";
       }
       if (guessesLeft === 1) {
-        document.querySelector(".five").style.display = "block";
+        document.querySelector(".five").style.display = "inline";
       }
       if (guessesLeft === 0) {
-        document.querySelector(".six").style.display = "block";
+        document.querySelector(".six").style.display = "inline";
       }
       document.querySelector("#losses").innerHTML = "Losses: " + losses;
       document.querySelector("#guessesRemaining").innerHTML = guessesLeft;

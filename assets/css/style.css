@@ -1,7 +1,9 @@
 body {
   font-family: "Yatra One", cursive;
-  background-color:gray;
+  background: url(../images/batman.jpg);
+  
   font-size: 24px;
+  color:white;
   text-align: center;
   overflow-x: hidden;
 }
@@ -18,13 +20,17 @@ h1 {
   line-height: 35px;
 }
 
-.container p:nth-of-type(2) {
+/* .container p:nth-of-type(2) {
   margin: 60px 0px;
-}
+} */
 
 hr {
   width: 80%;
   margin: 25px auto;
+}
+
+.main {
+  width: 50%
 }
 
 .word-to-guess {
@@ -49,43 +55,34 @@ hr {
 }
 
 .hangman {
-  height: 500px;
-  width: 100%;
-  position:relative;
-  max-width: 400px;
-  margin: 35px auto;
-}
-
-.zero, .one, .two, .three, .four, .five, .six, {
-  position: absolute;
+  width: 50%;
 }
 
 .zero {
-  bottom: 0;
-  left: -10px;
+  background-color: grey;
+  position: fixed;
 }
 .one {
-  left: 26px;
-  bottom: 50px;
+  background-color: grey;
+  position: fixed;
 }
 .two {
-  top: -16px;
-  left: 126px;
+  background-color: grey;
+  position: fixed;
 }
 .three {
-  top: 18px;
-  right: 60px;
+  background-color: grey;
+  position: fixed;
 }
 .four {
-  top: 68px;
-  right: 27px;
+  background-color: grey;
+  position: fixed;
 }
-
 .five {
-  right: 50px;
-  top: 166px;
+  background-color: grey;
+  position: fixed;
 }
 .six {
-  right: 77px;
-  top: 169px;
+  background-color: grey;
+  position: fixed;
 }
