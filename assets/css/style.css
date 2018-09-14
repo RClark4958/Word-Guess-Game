@@ -1,7 +1,7 @@
 body {
   font-family: "Yatra One", cursive;
   background: url(../images/batman.jpg);
-  
+  background-repeat: repeat-y;
   font-size: 24px;
   color:white;
   text-align: center;
@@ -20,9 +20,9 @@ h1 {
   line-height: 35px;
 }
 
-/* .container p:nth-of-type(2) {
+.container p:nth-of-type(2) {
   margin: 60px 0px;
-} */
+}
 
 hr {
   width: 80%;
@@ -60,29 +60,29 @@ hr {
 
 .zero {
   background-color: grey;
-  position: fixed;
+  position: absolute;
 }
 .one {
   background-color: grey;
-  position: fixed;
+  position: absolute;
 }
 .two {
   background-color: grey;
-  position: fixed;
+  position: absolute;
 }
 .three {
   background-color: grey;
-  position: fixed;
+  position: absolute;
 }
 .four {
   background-color: grey;
-  position: fixed;
+  position: absolute;
 }
 .five {
   background-color: grey;
-  position: fixed;
+  position: absolute;
 }
 .six {
   background-color: grey;
-  position: fixed;
+  position: absolute;
 }
